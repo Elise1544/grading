@@ -1,0 +1,80 @@
+@import "../variables.scss";
+
+.contacts {
+  position: relative;
+  width: 33%;
+
+  @media (max-width: $tablet-width) {
+    width: 40%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 189px;
+  background-color: $titles-very-light;
+  opacity: 0.4;
+  left: -1px;
+  top: 17px;
+
+  @media (max-width: $tablet-width) {
+    height: 177px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+    height: 2px;
+    left: calc(50% - 147px);
+    top: 10px;
+  }
+}
+
+.contacts__title {
+  margin-left: 89px;
+  margin-bottom: 21px;
+
+  color: $titles;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 50px;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 40px 10px 23px 0;
+    text-align: center;
+  }
+}
+
+.contacts__link {
+  display: block;
+
+  margin-left: 89px;
+  margin-bottom: 19px;
+  padding-left: 40px;
+
+  color: $accent;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: center;
+  }
+}

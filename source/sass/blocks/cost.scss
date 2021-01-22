@@ -1,0 +1,213 @@
+@import "../variables.scss";
+
+.cost {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  padding: 38px 28px 28px 28px;
+
+  width: 370px;
+  min-height: 672px;
+
+  border: 1px solid $titles-very-light;
+  border-radius: 6px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 50px;
+    margin-top: 27px;
+    padding: 0;
+    padding-top: 30px;
+
+    width: 288px;
+    min-height: 630px;
+  }
+
+  @media (max-width: $mobile-width)  {
+    margin: 0;
+    margin-top: 28px;
+
+    min-height: 612px;
+  }
+}
+
+.cost--active {
+  border: 3px solid $accent;
+  border-radius: 6px;
+}
+
+.cost__name {
+  align-self: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 23px;
+
+  color: $details-light;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    text-align: center;
+
+    margin-bottom: 0;
+  }
+}
+
+.cost__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -1.27273px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.cost__value {
+  margin: 0;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.cost--active .cost__name {
+  color: $accent;
+}
+
+.cost--active .cost__title {
+  line-height: 34px;
+  letter-spacing: -0.2px;
+}
+
+.cost__description {
+  position: relative;
+  margin-bottom: 60px;
+  padding-right: 41px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.cost__description::after {
+  content: "";
+  position: absolute;
+  width: 310px;
+  height: 1px;
+  bottom: -28px;
+  left: 0;
+  background-color: $titles-very-light;
+
+  @media (max-width: $tablet-width) {
+    bottom: -10px;
+    left: 20px;
+    width: 248px;
+  }
+}
+
+.cost--active .cost__description::after {
+  background-color: $accent;
+}
+
+.cost__list {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 30px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 19px 0 48px;
+  }
+}
+
+.cost__element {
+  margin-bottom: 8px;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 9px;
+  }
+}
+
+.cost__element::before,
+.cost--active .cost__element::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  top: 9px;
+  left: -29px;
+}
+
+.cost--active .cost__element::before {
+  background-image: url(../../img/tick.svg);
+}
+
+.cost__element::before {
+  background-image: url(../../img/tick-accent.svg);
+}
+
+.cost__element br {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.cost__link {
+  margin-top: 22px;
+  padding: 30px;
+  width: 310px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+    padding: 18px;
+
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 24px;
+  }
+}
+
+.cost__buy {
+  display: block;
+  text-align: center;
+}
+
+.cost--active .cost__link {
+  margin-top: 46px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 35px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 18px;
+  }
+}

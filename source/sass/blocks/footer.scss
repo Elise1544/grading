@@ -1,0 +1,15 @@
+.page-footer {
+  margin: 153px 364px 0 388px;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    margin: 62px 20px 0 22px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 61px;
+  }
+}

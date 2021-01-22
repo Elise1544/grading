@@ -1,0 +1,48 @@
+.modal {
+  width: 728px;
+  height: 444px;
+
+
+  background-color: $background-modal;
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    height: 568px;
+  }
+}
+
+.modal--unactive {
+  display: none;
+}
+
+.modal-wrapper {
+  display: none;
+}
+
+.modal-wrapper--active {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  background-color: $black;
+  opacity: 0.9;
+}
+
+.close-button {
+  position: absolute;
+
+  content: "";
+  background-color: inherit;
+  background-image: url(../../img/close.svg);
+  width: 25px;
+  height: 25px;
+
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+}

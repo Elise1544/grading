@@ -1,0 +1,60 @@
+// шрифты
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v15-latin_cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-500.woff2") format("woff2"),
+    url("../fonts/montserrat-v15-latin_cyrillic-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-600.woff2") format("woff2"),
+    url("../fonts/montserrat-v15-latin_cyrillic-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/montserrat-v15-latin_cyrillic-700.woff2") format("woff2"),
+    url("../fonts/montserrat-v15-latin_cyrillic-700.woff") format("woff");
+}
+
+// размеры
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$desktop-width: 1024px;
+
+// цвета
+$white: #ffffff;
+$white-light: rgba(255, 255, 255, 0.7);
+$black: #000000;
+$titles: #2C2E3F;
+$titles-light: rgba(44, 46, 63, 0.7);
+$titles-very-light: rgba(44, 46, 63, 0.3);
+$accent: #FE7865;
+$accent-hover: #F17D4B;
+$details: #141517;
+$details-light: rgba(20, 21, 23, 0.7);
+$details-very-light: rgba(20, 21, 23, 0.5);
+$background-grey: #D8D8D8;
+$background-blue: #81a0d4;
+$background-modal: #FBF8F8;
+$shadow: rgba(41, 54, 66, 0.1);
+$modal-text: #48494D;
+$icon: #D7D9DF;

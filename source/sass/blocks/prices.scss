@@ -1,0 +1,130 @@
+.prices {
+  margin: -283px 345px 0 375px;
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    margin: -258px 21px 0 21px;
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: -25px 15px 0 15px;
+  }
+}
+
+.prices__about {
+  order: 1;
+  width: 383px;
+  padding: 72px 0 0 80px;
+
+  @media (max-width: $tablet-width) {
+    order: -1;
+    flex-grow: 100;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.prices__title {
+  position: relative;
+  margin-bottom: 48px;
+  color: $titles;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 21px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 19px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.prices__title::after {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 3px;
+  bottom: -18px;
+  left: 2px;
+  background-color: $accent;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.prices__description {
+  margin-bottom: 60px;
+  color: $titles-light;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 33px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.prices__contact {
+  margin-bottom: 13px;
+  text-align: center;
+  color: $titles;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 11px;
+
+    color: $details;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.prices__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    margin-left: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: calc(50% - 144px);
+    margin-top: 8px;
+  }
+}
+
+.prices__link {
+  display: block;
+  text-align: center;
+  color: $black;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+
+  @media (max-width: $tablet-width) {
+    color: $accent;
+    font-size: 18px;
+  }
+}

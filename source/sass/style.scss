@@ -1,0 +1,59 @@
+@import "../sass/blocks/body.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/buy.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/corporate.scss";
+@import "../sass/blocks/cost.scss";
+@import "../sass/blocks/country.scss";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/mail.scss";
+@import "../sass/blocks/main-information.scss";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/modal.scss";
+@import "../sass/blocks/navigation.scss";
+@import "../sass/blocks/phone.scss";
+@import "../sass/blocks/places.scss";
+@import "../sass/blocks/prices.scss";
+@import "../sass/blocks/questions.scss";
+@import "../sass/blocks/review.scss";
+@import "../sass/blocks/round.scss";
+@import "../sass/blocks/site.scss";
+@import "../sass/blocks/success-form.scss";
+@import "../sass/blocks/tours.scss";
+@import "../sass/blocks/travel.scss";
+@import "../sass/variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

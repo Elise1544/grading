@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Путешествие по Европе</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="/fonts/montserrat-v15-latin_cyrillic-regular.woff2" as="font">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo logo">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="img/logo.svg">
+        <img class="logo__picture" src="img/logo.svg" width="58" height="22" alt="Логотип организации">
+      </picture>
+    </a>
+    <nav class="page-header__nav page-header__nav--mobile navigation">
+      <ul class="navigation__wrapper">
+        <li class="navigation__element navigation__element--travel"><a class="navigation__link" href="#places">О
+            путешествии</a></li>
+        <li class="navigation__element"><a class="navigation__link" href="#prices">Цены</a></li>
+      </ul>
+    </nav>
+    <a class="page-header__link phone" href="tel:+749978468446">
+      <svg class="phone__image" role="img" width="30" height="30" fill="none">
+        <use xlink:href="img/sprite.svg#icon-phone"></use>
+      </svg>
+      <span class="phone__text">+7 (499) -784-684-46</span>
+    </a>
+    <button type="button" class="page-header__button">
+      <span class="visually-hidden">Меню навигации</span>
+    </button>
+  </header>
+
+  <main>
+
+  </main>
+
+  <footer class="page-footer">
+    <section class="travel">
+      <h3 class="travel__title">Следующие путешествия</h3>
+      <ul class="travel__list">
+        <li class="travel__element"><a class="travel__link" href="blank.html">Марсель</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Сардиния</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Корс</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Ним</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Палермо</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Ницца</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Монпелье</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Катания</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Монако</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Барселона</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Неаполь</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Динь-ле-Бен</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Пальма</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Рим</a></li>
+        <li class="travel__element"><a class="travel__link" href="blank.html">Гренобль</a></li>
+      </ul>
+    </section>
+    <section class="contacts">
+      <h3 class="contacts__title">Наши контакты</h3>
+      <a class="contacts__link mail" href="mailto:puteshestviemechta@gmail.ru">
+        <svg class="mail__image" role="img" width="26" height="20" fill="none">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        <span class="mail__text">Почта</span>
+        <span class="mail__address">puteshestviemechta@gmail.ru</span>
+      </a>
+      <a class="contacts__link phone phone--footer" href="tel:+749978468446">
+        <svg class="phone__image" role="img" width="30" height="30" fill="none">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        <span class="phone__text">+7 (499) -784-684-46</span>
+      </a>
+    </section>
+    <section class="corporate">
+      <h3 class="corporate__title">Корпоративные путешествия</h3>
+      <p class="corporate__description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные
+        туры очень сближают компанию,
+        помогают поддерживать корпоративный дух, а также являются отличным времяпрепровождением</p>
+    </section>
+  </footer>
+
+  <div class="modal buy-tour modal--unactive">
+    <picture class="buy-tour__picture">
+      <source type="image/webp" srcset="img/buy-background.webp 1x, img/buy-background@2x.webp 2x">
+      <img class="buy-tour__picture" src="img/buy-background.jpg" srcset="img/buy-background@2x.jpg 2x" width="338"
+        height="444" alt="Фотография пляжа">
+    </picture>
+    <h3 class="buy-tour__title">Купить тур</h3>
+    <form class="buy-tour__form form" action="#" method="post">
+      <label class="form__label form__label--phone">
+        <span class="form__icon">*</span>
+        <span class="form__region">+7</span>
+        <input class="form__input form__input--phone" name="phone" type="tel" pattern="[+,0-9]{11,12}" required>
+      </label>
+      <label class="form__label">
+        <input class="form__input form__input--mail" name="email" type="email">
+      </label>
+      <button class="form__button button" type="submit">Отправить</button>
+    </form>
+    <button class="buy-tour__button close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </div>
+
+  <div class="modal success-form modal--unactive">
+    <p class="success-form__thanks">Форма успешно отправлена, <br>спасибо! :)</p>
+    <button class="success-form__button close-button" type="button">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </div>
+  <div class="modal-wrapper"></div>
+
+  <script src="js/countries.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/modal.js"></script>
+
+</body>
+
+</html>

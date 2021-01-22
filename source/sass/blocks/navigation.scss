@@ -1,0 +1,38 @@
+.navigation__wrapper {
+  display: flex;
+  margin-top: 39px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.navigation__element {
+  @media (max-width: $tablet-width) {
+    background-color: $background-modal;
+    min-height: 60px;
+    margin-bottom: 30px;
+    padding-top: 17px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: $modal-text;
+  }
+}
+
+.navigation__element--travel {
+  color: $titles;
+}
+
+.navigation__link {
+  padding: 20px;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: $accent;
+}

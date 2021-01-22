@@ -1,0 +1,20 @@
+.success-form {
+  position: fixed;
+  z-index: 2;
+  left: calc(50% - 364px);
+  top: 30%;
+
+  @media (max-width: $mobile-width) {
+    top: 10%;
+    left: calc(50% - 162px);
+  }
+}
+
+.success-form__thanks {
+  margin-top: 179px;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: center;
+}

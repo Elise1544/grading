@@ -1,0 +1,29 @@
+@import "../variables.scss";
+
+.button {
+  display: block;
+  min-height: 75px;
+
+  background-color: $accent;
+
+  color: $white;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 50px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: $accent-hover;
+}
